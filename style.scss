@@ -1,0 +1,483 @@
+@font-face {
+    font-family: "Gilroy";
+    src: url("fonts/Gilroy-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Homemade Apple";
+    src: url("fonts/HomemadeApple-Regular.ttf");
+}
+
+@media (min-width: 501px) {
+
+    @mixin gilroy-links {
+        font-family: Gilroy;
+        font-size: 1.25vw;
+        line-height: 1.5vw;
+        text-decoration: none;
+    }
+    
+    @mixin gilroy-1vw {
+        font-family: Gilroy;
+        font-size: 1vw;
+        line-height: 1.4vw;
+        text-decoration: none;
+    }
+
+    body {
+        margin: 0;
+
+        header {
+            padding: 1.875vw 0;
+        
+            .nav-middle {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 0.764vw 2.778vw 0.764vw 5.556vw;
+                
+                .menu {
+                    display: none;
+                }
+            
+                span {
+                    font-family: Homemade Apple;
+                    font-size: 1.25vw;
+                    line-height: 2.7vw;
+                    text-align: center;        
+                }
+        
+                .navigation {
+                    margin-left: -2vw;
+        
+                    a {
+                        @include gilroy-links;
+                        color: #000000;
+                        margin-left: 2vw;
+                    }
+                }
+        
+                .header-button {
+                    @include gilroy-links;
+                    text-align: center;
+                    text-transform: uppercase;
+                    color: #F7941E;    
+        
+                    > div {
+                        display: inline-block;
+                        border: 1px solid #F7941E;
+                        border-radius: 0.5vw;
+                        padding: 1vw 1.5vw;
+                    }
+                }
+        
+                .header-button:hover {
+                    color: #FFFFFF;
+                
+                    > div {
+                        background: #F7941E;
+                    }
+                }        
+            }
+        }
+        
+        main {
+            display: flex;
+            flex-wrap: wrap;
+    
+            .top-left {
+                width: 50%;
+                height: 48.6vw;
+                box-sizing: border-box;
+                padding: 10.7vw 8.75vw 9.4vw 11.25vw;
+                background: #F1F1F2;
+        
+                p:first-of-type {
+                    font-family: Gilroy;
+                    font-size: 3.9vw;
+                    font-weight: bold;
+                    line-height: 4.8vw;
+                    margin-top: 0;
+                }
+        
+                p:last-of-type {
+                    font-family: Gilroy;
+                    font-size: 1.4vw;
+                    line-height: 2vw;
+                    margin: 0 0 3.6vw 0;
+                }
+        
+                .top-left-button {
+                    @include gilroy-links;
+                    text-align: center;
+                    text-transform: uppercase;
+                    color: #FFFFFF;
+        
+                    > div {
+                        display: inline-block;
+                        background: #F7941E;
+                        border: 1px solid #F7941E;
+                        border-radius: 0.5vw;
+                        padding: 1vw 1.5vw;
+                    }
+                }
+        
+                .top-left-button:hover {
+                    color: #F7941E;
+        
+                    > div {
+                        background: #FFFFFF;
+                    }
+                }
+            }
+        
+            .top-right {
+                width: 50%;
+                height: 48.6vw;
+                background: url('bg_top-right.png') no-repeat center/cover;
+            }
+        
+            .bottom-left {
+                width: 50%;
+                height: 41.6vw;
+                background: url('bg_down-left.png') no-repeat center/cover;
+            }
+        
+            .bottom-right {
+                width: 50%;
+                height: 41.6vw;
+                box-sizing: border-box;
+                padding: 11.4vw 11.5vw 7.2vw 7.7vw;
+                background: #F1F1F2;
+        
+                p:first-of-type {
+                    font-family: Gilroy;
+                    font-size: 2.2vw;
+                    line-height: 3.125vw;
+                    margin-top: 0;
+                }
+        
+                p:last-of-type {
+                    font-family: Gilroy;
+                    font-size: 1.4vw;
+                    line-height: 2vw;
+                    text-align: justify;
+                    margin: 0 0 2.4vw 0;
+                }
+        
+                .bottom-right-button {
+                    @include gilroy-links;
+                    text-align: center;
+                    text-transform: uppercase;
+                    color: #F7941E;
+        
+                    > div {
+                        display: inline-block;
+                        border: 1px solid #F7941E;
+                        border-radius: 0.5vw;
+                        padding: 1vw 1.5vw;
+                    }
+                }
+        
+                .bottom-right-button:hover {
+                    color: #FFFFFF;
+        
+                    > div {
+                        border: 1px solid #FFFFFF;
+                        background: #F7941E;
+                    }
+                }
+            }
+        }
+        
+        .gifts {
+            box-sizing: border-box;
+            padding: 6.6vw 9.4vw 9.5vw;
+             
+            > p:first-of-type {
+                font-family: Gilroy;
+                font-size: 2.2vw;
+                line-height: 2.6vw;
+                text-align: center;
+                margin-top: 0;
+            }
+        
+            > p:last-of-type {
+                @include gilroy-links;
+                text-align: center;
+                margin-bottom: 4.4vw;
+            }
+        
+            .slider-container {
+                display: flex;
+                justify-content: space-between;
+        
+                .card {
+        
+                    div:last-of-type {
+                        box-sizing: border-box;
+                        padding: 1.5vw;
+                        background: #FAFAFA;
+        
+                        > p {
+                            font-family: Gilroy;
+                            font-size: 1.4vw;
+                            line-height: 1.5vw;
+                            margin-bottom: 5vw;
+                        }
+        
+                        > a {
+                            @include gilroy-1vw;
+                            color: #000000;
+                        }
+                    }
+                }
+        
+                @mixin cards($png) {
+        
+                    div:first-of-type {
+                        width: 18.75vw;
+                        height: 18.75vw;
+                        background: url($png) no-repeat center/cover;    
+                    }
+                }
+        
+                .birthday {
+                    @include cards('birthday_bg.png');
+                }
+        
+                .anniversary {
+                    @include cards('anniversary_bg.png');
+                }
+        
+                .valentine {
+                    @include cards('valentine_bg.png');
+                }
+        
+                .christmas {
+                    @include cards('xmas_bg.png');
+                }
+            }
+        }
+        
+        .active {
+            box-shadow: 0.7vw 0.7vw 1vw rgba(0, 0, 0, 0.05);
+        }
+    
+        #carousel {
+            display: none;
+        }
+        
+        .contact {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 5.6vw 16.3vw 4.8vw;
+            background: #F7941E;
+        
+            > div:first-of-type {
+                box-sizing: border-box;
+        
+                > p:first-of-type {
+                    font-family: Gilroy;
+                    font-size: 2.2vw;
+                    font-weight: bold;
+                    line-height: 3.125vw;
+                    margin: 0;
+                }
+            
+                > p:last-of-type {
+                    font-family: Gilroy;
+                    font-size: 2.2vw;
+                    line-height: 3.125vw;
+                    margin: 0;
+                }    
+            }
+        
+            > div:last-of-type {
+                display: flex;
+                margin-left: -1vw;
+        
+                .contact-left-button {
+                    @include gilroy-links;
+                    text-transform: uppercase;
+                    color: #FFFFFF;
+            
+                    > div {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        width: 12vw;
+                        height: 3.3vw;
+                        background: #000000;
+                        border-radius: 0.5vw;
+                        border: 1px solid #000000;
+                    }
+                }
+        
+                .contact-left-button:hover {
+                    color: #000000;
+            
+                    > div {
+                        background: #F7941E;
+                    }
+                }
+            
+                .contact-right-button {
+                    @extend .contact-left-button;
+                    color: #000000;
+            
+                    > div {
+                        margin-left: 1vw;
+                        background: #F7941E;
+                        border: 1px solid #000000;
+                    }
+                }
+        
+                .contact-right-button:hover {
+                    @extend .contact-right-button;
+                    color: #FFFFFF;
+            
+                    > div {
+                        background: #000000;
+                    }
+                }
+            }
+        }
+        
+        .blogs {
+            box-sizing: border-box;
+            padding: 6.6vw 9.4vw 9.5vw;
+        
+            > p:first-of-type {
+                font-family: Gilroy;
+                font-size: 2.2vw;
+                line-height: 2.6vw;
+                text-align: center;
+                margin-top: 0;
+            }
+        
+            > p:last-of-type {
+                @include gilroy-links;
+                text-align: center;
+                margin-bottom: 4.4vw;
+            }
+        
+            .blogs-card {
+                display: flex;
+                height: 25.7vw;
+        
+                > div:first-of-type {
+                    width: 27.7vw;
+                    background: url('bg_down.png') no-repeat center/cover;
+                }
+        
+                > div:last-of-type {
+                    box-sizing: border-box;
+                    padding: 4.375vw 14vw 3.4vw 5.4vw;
+                    background: #000000;
+        
+                    > p:first-of-type {
+                        @include gilroy-1vw;
+                        color: #FFFFFF;
+                    }
+        
+                    > p:last-of-type {
+                        font-family: Gilroy;
+                        font-size: 3.3vw;
+                        line-height: 4vw;
+                        color: #FFFFFF;
+                        margin-top: 0;
+                    }
+        
+                    > a {
+                        @include gilroy-links;
+                        color: #FFFFFF;
+                    }
+                }
+            }
+        
+            .blogs-container {
+                display: flex;
+                margin-top: 2.8vw;
+                margin-left: -2vw;
+        
+                > div {
+                    box-sizing: border-box;
+                    padding: 3.3vw;
+                    margin-left: 2vw;
+        
+                    > p:first-of-type {
+                        font-family: Gilroy;
+                        font-size: 1.8vw;
+                        font-weight: bold;
+                        line-height: 2.3vw;
+                        margin: 0;
+                    }
+        
+                    > p:last-of-type {
+                        @include gilroy-links;
+                    }
+        
+                    > a {
+                        @include gilroy-1vw;
+                        color: #000000;
+        
+                    }
+                }
+            }
+        }
+        
+        footer {
+            padding: 7.3vw 15.3vw 2.4vw;
+            background: #FAFAFA;
+        
+            .footer-links {
+                display: flex;
+                justify-content: center;
+                margin-left: -5.6vw;
+        
+                > a {
+                    @include gilroy-1vw;
+                    font-weight: bold;
+                    color: #000000;
+                    margin-left: 5.6vw;
+                }
+        
+                > span {
+                    font-family: Homemade Apple;
+                    font-size: 1.25vw;
+                    line-height: 2.7vw;
+                    color: #F7941E;
+                    margin: 0 4.1vw 0 9.8vw;
+                }
+            }
+        
+            .line {
+                border: 1px solid #000000;
+                margin: 3.5vw 0;
+            }
+        
+            .social {
+                display: flex;
+                justify-content: center;
+                margin-left: -1.5vw;
+        
+                > a {
+                    margin-left: 1.5vw;
+                }
+            }
+        
+            > p {
+                @include gilroy-1vw;
+                text-align: center;
+                margin-top: 5vw;
+        
+                > a {
+                    text-decoration: none;
+                    color: #000000;
+                }
+            }
+        }        
+    }        
+}

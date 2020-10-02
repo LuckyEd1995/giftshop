@@ -1,0 +1,497 @@
+@font-face {
+    font-family: "Gilroy";
+    src: url("fonts/Gilroy-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Homemade Apple";
+    src: url("fonts/HomemadeApple-Regular.ttf");
+}
+
+@media (max-width: 500px) {
+
+    body {
+        margin: 0;
+
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 999;
+    
+            .navigation, .header-button {
+                display: none;
+              }
+          
+              .nav-middle {
+                  display: flex;
+                  justify-content: space-between;
+                  align-items: center;
+                  padding: 5vw;
+                  background: #FAFAFA;
+          
+                  > span {
+                      font-family: Homemade Apple;
+                      font-size: 4vw;
+                      line-height: 5vw;
+                      order: 1;
+                  }
+              }
+          
+              .menu {
+                  width: 20px;
+                  height: 14px;
+                  order: 0;
+                  
+                  #menu-toggler {
+                      position: absolute;
+                      visibility: hidden;
+                  }
+          
+                  #menu-toggler:checked ~ .menu-box {
+                      left: 0;
+                      z-index: 1;
+                      visibility: visible;
+                  }
+                    
+                  #menu-toggler:checked ~ .menu-btn > span:first-child {
+                      top: 6px;
+                      transform: rotate(45deg);
+                  }
+                    
+                  #menu-toggler:checked ~ .menu-btn > span:nth-child(2) {
+                      transform: rotate(45deg);
+                  }
+                    
+                  #menu-toggler:checked ~ .menu-btn > span:last-child {
+                      bottom: 6px;
+                      transform: rotate(135deg);
+                  }        
+                    
+                  .menu-btn {
+                      display: flex;
+                      align-items: center;
+                      position: absolute;
+                      box-sizing: border-box;
+                      width: 20px;
+                      height: 14px;
+                      z-index: 2;
+          
+                      > span {
+                          position: absolute;
+                          width: 100%;
+                          height: 2px;
+                          background-color: black;
+                          transition-duration: .25s;
+                      }
+                        
+                      > span:first-child {
+                          top: 0;
+                      }
+                        
+                      span:last-child {
+                          bottom: 0;
+                      }    
+                  }
+                              
+                  .menu-box {
+                      position: absolute;
+                      top: 0;
+                      left: -100%;
+                      margin: 0;
+                      padding: 12vw 0 0 0;
+                      width: 50%;
+                      height: 100vh;
+                      list-style: none;
+                      visibility: hidden;
+                      background-color: rgba(250, 250, 250, 1);
+                      transition-duration: .25s;
+          
+                      a {
+                          box-sizing: border-box;
+                          display: block;
+                          width: 100%;
+                          padding: 10px 20px;
+
+                          font-family: Gilroy;
+                          font-size: 4vw;
+                          line-height: 5vw;
+                          text-decoration: none;
+                          color: #000000;
+                      }
+          
+                      a:hover {
+                          background-color: #F7941E;
+                          color: #FFFFFF;
+                      }    
+                  }          
+              }      
+        }
+    
+        main {
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 14.941vw;
+    
+            .top-right, .bottom-left {
+                display: none;
+            }
+            
+            .top-left, .bottom-right {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                height: 100vw;
+                padding: 5vw 11vw;
+    
+                > p:first-of-type {
+                    font-family: Gilroy;
+                    font-size: 8vw;
+                    font-weight: bold;
+                    line-height: 10vw;
+                    text-align: center;
+                }
+    
+                > p:last-of-type {
+                    font-family: Gilroy;
+                    font-size: 4vw;
+                    line-height: 5vw;
+                    text-align: justify;
+                }
+            }
+    
+            .top-left {
+                background: linear-gradient(rgba(247, 148, 30, 0.6)), url('bg_top-right.png') center/cover no-repeat;
+    
+                .top-left-button {
+                    text-align: center;
+                    text-transform: uppercase;
+                    color: #FFFFFF;
+                    
+                    > div {
+                        display: inline-block;
+                        padding: 2vw 4vw;
+                        background: #000000;
+                        border-radius: 1.2vw;
+                    }
+                }
+    
+                .top-left-button:hover {
+                    color: #000000;
+    
+                    > div {
+                        background: #F7941E;
+                    }
+                }
+            }
+    
+            .bottom-right {
+                background: #F1F1F2;
+    
+                .bottom-right-button {
+                    text-align: center;
+                    text-transform: uppercase;
+                    color: #FFFFFF;
+    
+                    > div {
+                        display: inline-block;
+                        padding: 2vw 4vw;
+                        background: #F7941E;
+                        border-radius: 1.2vw;
+                    }
+                }
+    
+                .bottom-right-button:hover {
+    
+                    > div {
+                        background: #000000;
+                    }
+                }
+            }
+        }
+    
+        .gifts {
+            box-sizing: border-box;
+            padding: 5vw 5vw;
+    
+            > p:first-of-type {
+                font-family: Gilroy;
+                font-size: 5vw;
+                line-height: 6vw;
+                text-align: center;
+            }
+    
+            > p:last-of-type {
+                font-family: Gilroy;
+                font-size: 3vw;
+                line-height: 4vw;
+                text-align: center;
+            }
+    
+            .slider-container {
+                display: none;
+            }
+    
+            #carousel {
+                position: relative;
+    
+                .cards {
+                    margin: 0 10px 10px 0;
+                    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.1);
+    
+                    > div:first-of-type {
+                        height: 70vw;
+                    }
+    
+                    > div:last-of-type {
+                        padding: 4vw;
+                        text-decoration: none;
+                        background: #F1F1F2;
+    
+                        > p {
+                            font-family: Gilroy;
+                            font-weight: bold;
+                            font-size: 6vw;
+                            line-height: 7vw;
+                            margin-bottom: 15vw;
+                        }
+    
+                        > a {
+                            font-family: Gilroy;
+                            font-size: 3vw;
+                            line-height: 4vw;
+                            color: #000000;
+                        }
+                    }
+                }
+    
+                .birthday {
+    
+                    > div:first-of-type {
+                        background: url('birthday_bg.png') no-repeat center/cover;
+                    }
+                }
+    
+                .anniversary {
+    
+                    > div:first-of-type {
+                        background: url('anniversary_bg.png') no-repeat center/cover;
+                    }
+                }
+    
+                .valentine {
+    
+                    > div:first-of-type {
+                        background: url('valentine_bg.png') no-repeat center/cover;
+                    }
+                }
+    
+                .christmas {
+    
+                    > div:first-of-type {
+                        background: url('xmas_bg.png') no-repeat center/cover;
+                    }
+                }
+            }    
+        }
+    
+        .contact {
+            padding: 5vw 10vw;
+            background: #F7941E;
+            text-align: center;
+            
+            > div:first-of-type {
+    
+                > p {
+                    font-family: Gilroy;
+                    font-size: 4vw;
+                    line-height: 5vw;
+                }
+    
+                > p:first-of-type {
+                    font-weight: bold;
+                }
+            }
+    
+            > div:last-of-type {
+                display: flex;
+                justify-content: center;
+                margin-top: 10vw;
+    
+                .contact-left-button {
+                    font-family: Gilroy;
+                    text-align: center;
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    color: #FFFFFF;
+    
+                    > div {
+                        padding: 2vw 4vw;
+                        background: #000000;
+                        border: 1px solid #000000;
+                        border-radius: 1.2vw;
+                    }
+                }
+
+                .contact-left-button:hover {
+                    color: #000000;
+
+                    > div {
+                        background: transparent;
+                    }
+                }
+    
+                .contact-right-button {
+                    font-family: Gilroy;
+                    text-align: center;
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    color: #000000;
+                    margin-left: 3vw;
+    
+                    > div {
+                        border-radius: 1.2vw;
+                        padding: 2vw 4vw;
+                        border: 1px solid #000000;
+                    }
+                }
+
+                .contact-right-button:hover {
+                    color: #FFFFFF;
+
+                    > div {
+                        background: #000000;
+                    }
+                }
+            }
+        }
+    
+        .blogs {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 10vw 5vw;
+    
+            > p:first-of-type {
+                font-family: Gilroy;
+                font-size: 6vw;
+            }
+    
+            > p:last-of-type {
+                font-family: Gilroy;
+                text-align: center;
+            }
+    
+            .blogs-card {
+                width: 100%;
+    
+                > div:first-of-type {
+                    height: 60vw;
+                    background: url('bg_down.png') no-repeat center/cover;
+                }
+    
+                > div:last-of-type {
+                    background: #000000;
+                    padding: 8vw;
+    
+                    > p:first-of-type {
+                        font-family: Gilroy;
+                        font-size: 3vw;
+                        line-height: 4vw;
+                        color: #FFFFFF;
+                    }
+    
+                    > p:last-of-type {
+                        font-family: Gilroy;
+                        font-size: 6vw;
+                        line-height: 7vw;
+                        color: #FFFFFF;
+                    }
+    
+                    > a {
+                        font-family: Gilroy;
+                        font-size: 3vw;
+                        line-height: 4vw;
+                        color: #FFFFFF;
+                    }
+                }
+            }
+    
+            .blogs-container {
+    
+                > div {
+                    padding: 5vw;
+                    margin-top: 5vw;
+                    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.05);
+    
+                    > p {
+                        font-family: Gilroy;
+                    }
+    
+                    > p:first-of-type {
+                        font-weight: bold;
+                    }
+    
+                    > a {
+                        font-family: Gilroy;
+                        font-size: 3vw;
+                        line-height: 4vw;
+                        color: #000000;
+                    }
+                }
+            }
+        }
+    
+        footer {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            padding: 10vw 10vw 5vw;
+            background: #F1F1F2;
+    
+            .footer-links {
+                display: flex;
+                justify-content: center;
+                width: 100%;
+                margin-right: -2vw;
+    
+                > a {
+                    font-family: Gilroy;
+                    font-size: 3vw;
+                    color: #000000;
+                    text-decoration: none;
+                    margin-right: 2vw;
+                }
+    
+                > span {
+                    font-family: Homemade Apple;
+                    color: #F7941E;
+                    margin: 0 4vw;
+                }
+            }
+    
+            .line {
+                width: 100%;
+                margin: 8vw 0;
+                border: 0.5px solid black;
+            }
+    
+            .social {
+                margin-right: 2vw;
+            }
+    
+            > p {
+                font-family: Gilroy;
+                font-size: 3vw;
+                text-decoration: none;
+                margin-top: 5vw;
+    
+                > a {
+                    color: #000000;
+                }
+            }
+        }    
+    }
+}

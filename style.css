@@ -1,0 +1,476 @@
+@font-face {
+  font-family: "Gilroy";
+  src: url("fonts/Gilroy-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Homemade Apple";
+  src: url("fonts/HomemadeApple-Regular.ttf");
+}
+
+@media (min-width: 501px) {
+  body {
+    margin: 0;
+  }
+  body header {
+    padding: 1.875vw 0;
+  }
+  body header .nav-middle {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0.764vw 2.778vw 0.764vw 5.556vw;
+  }
+  body header .nav-middle .menu {
+    display: none;
+  }
+  body header .nav-middle span {
+    font-family: Homemade Apple;
+    font-size: 1.25vw;
+    line-height: 2.7vw;
+    text-align: center;
+  }
+  body header .nav-middle .navigation {
+    margin-left: -2vw;
+  }
+  body header .nav-middle .navigation a {
+    font-family: Gilroy;
+    font-size: 1.25vw;
+    line-height: 1.5vw;
+    text-decoration: none;
+    color: #000000;
+    margin-left: 2vw;
+  }
+  body header .nav-middle .header-button {
+    font-family: Gilroy;
+    font-size: 1.25vw;
+    line-height: 1.5vw;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    color: #F7941E;
+  }
+  body header .nav-middle .header-button > div {
+    display: inline-block;
+    border: 1px solid #F7941E;
+    border-radius: 0.5vw;
+    padding: 1vw 1.5vw;
+  }
+  body header .nav-middle .header-button:hover {
+    color: #FFFFFF;
+  }
+  body header .nav-middle .header-button:hover > div {
+    background: #F7941E;
+  }
+  body main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  body main .top-left {
+    width: 50%;
+    height: 48.6vw;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding: 10.7vw 8.75vw 9.4vw 11.25vw;
+    background: #F1F1F2;
+  }
+  body main .top-left p:first-of-type {
+    font-family: Gilroy;
+    font-size: 3.9vw;
+    font-weight: bold;
+    line-height: 4.8vw;
+    margin-top: 0;
+  }
+  body main .top-left p:last-of-type {
+    font-family: Gilroy;
+    font-size: 1.4vw;
+    line-height: 2vw;
+    margin: 0 0 3.6vw 0;
+  }
+  body main .top-left .top-left-button {
+    font-family: Gilroy;
+    font-size: 1.25vw;
+    line-height: 1.5vw;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+  }
+  body main .top-left .top-left-button > div {
+    display: inline-block;
+    background: #F7941E;
+    border: 1px solid #F7941E;
+    border-radius: 0.5vw;
+    padding: 1vw 1.5vw;
+  }
+  body main .top-left .top-left-button:hover {
+    color: #F7941E;
+  }
+  body main .top-left .top-left-button:hover > div {
+    background: #FFFFFF;
+  }
+  body main .top-right {
+    width: 50%;
+    height: 48.6vw;
+    background: url("bg_top-right.png") no-repeat center/cover;
+  }
+  body main .bottom-left {
+    width: 50%;
+    height: 41.6vw;
+    background: url("bg_down-left.png") no-repeat center/cover;
+  }
+  body main .bottom-right {
+    width: 50%;
+    height: 41.6vw;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding: 11.4vw 11.5vw 7.2vw 7.7vw;
+    background: #F1F1F2;
+  }
+  body main .bottom-right p:first-of-type {
+    font-family: Gilroy;
+    font-size: 2.2vw;
+    line-height: 3.125vw;
+    margin-top: 0;
+  }
+  body main .bottom-right p:last-of-type {
+    font-family: Gilroy;
+    font-size: 1.4vw;
+    line-height: 2vw;
+    text-align: justify;
+    margin: 0 0 2.4vw 0;
+  }
+  body main .bottom-right .bottom-right-button {
+    font-family: Gilroy;
+    font-size: 1.25vw;
+    line-height: 1.5vw;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    color: #F7941E;
+  }
+  body main .bottom-right .bottom-right-button > div {
+    display: inline-block;
+    border: 1px solid #F7941E;
+    border-radius: 0.5vw;
+    padding: 1vw 1.5vw;
+  }
+  body main .bottom-right .bottom-right-button:hover {
+    color: #FFFFFF;
+  }
+  body main .bottom-right .bottom-right-button:hover > div {
+    border: 1px solid #FFFFFF;
+    background: #F7941E;
+  }
+  body .gifts {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding: 6.6vw 9.4vw 9.5vw;
+  }
+  body .gifts > p:first-of-type {
+    font-family: Gilroy;
+    font-size: 2.2vw;
+    line-height: 2.6vw;
+    text-align: center;
+    margin-top: 0;
+  }
+  body .gifts > p:last-of-type {
+    font-family: Gilroy;
+    font-size: 1.25vw;
+    line-height: 1.5vw;
+    text-decoration: none;
+    text-align: center;
+    margin-bottom: 4.4vw;
+  }
+  body .gifts .slider-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  body .gifts .slider-container .card div:last-of-type {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding: 1.5vw;
+    background: #FAFAFA;
+  }
+  body .gifts .slider-container .card div:last-of-type > p {
+    font-family: Gilroy;
+    font-size: 1.4vw;
+    line-height: 1.5vw;
+    margin-bottom: 5vw;
+  }
+  body .gifts .slider-container .card div:last-of-type > a {
+    font-family: Gilroy;
+    font-size: 1vw;
+    line-height: 1.4vw;
+    text-decoration: none;
+    color: #000000;
+  }
+  body .gifts .slider-container .birthday div:first-of-type {
+    width: 18.75vw;
+    height: 18.75vw;
+    background: url("birthday_bg.png") no-repeat center/cover;
+  }
+  body .gifts .slider-container .anniversary div:first-of-type {
+    width: 18.75vw;
+    height: 18.75vw;
+    background: url("anniversary_bg.png") no-repeat center/cover;
+  }
+  body .gifts .slider-container .valentine div:first-of-type {
+    width: 18.75vw;
+    height: 18.75vw;
+    background: url("valentine_bg.png") no-repeat center/cover;
+  }
+  body .gifts .slider-container .christmas div:first-of-type {
+    width: 18.75vw;
+    height: 18.75vw;
+    background: url("xmas_bg.png") no-repeat center/cover;
+  }
+  body .active {
+    -webkit-box-shadow: 0.7vw 0.7vw 1vw rgba(0, 0, 0, 0.05);
+            box-shadow: 0.7vw 0.7vw 1vw rgba(0, 0, 0, 0.05);
+  }
+  body #carousel {
+    display: none;
+  }
+  body .contact {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 5.6vw 16.3vw 4.8vw;
+    background: #F7941E;
+  }
+  body .contact > div:first-of-type {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  body .contact > div:first-of-type > p:first-of-type {
+    font-family: Gilroy;
+    font-size: 2.2vw;
+    font-weight: bold;
+    line-height: 3.125vw;
+    margin: 0;
+  }
+  body .contact > div:first-of-type > p:last-of-type {
+    font-family: Gilroy;
+    font-size: 2.2vw;
+    line-height: 3.125vw;
+    margin: 0;
+  }
+  body .contact > div:last-of-type {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: -1vw;
+  }
+  body .contact > div:last-of-type .contact-left-button, body .contact > div:last-of-type .contact-right-button, body .contact > div:last-of-type .contact-right-button:hover {
+    font-family: Gilroy;
+    font-size: 1.25vw;
+    line-height: 1.5vw;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #FFFFFF;
+  }
+  body .contact > div:last-of-type .contact-left-button > div, body .contact > div:last-of-type .contact-right-button > div, body .contact > div:last-of-type .contact-right-button:hover > div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 12vw;
+    height: 3.3vw;
+    background: #000000;
+    border-radius: 0.5vw;
+    border: 1px solid #000000;
+  }
+  body .contact > div:last-of-type .contact-left-button:hover, body .contact > div:last-of-type .contact-right-button:hover {
+    color: #000000;
+  }
+  body .contact > div:last-of-type .contact-left-button:hover > div, body .contact > div:last-of-type .contact-right-button:hover > div {
+    background: #F7941E;
+  }
+  body .contact > div:last-of-type .contact-right-button, body .contact > div:last-of-type .contact-right-button:hover {
+    color: #000000;
+  }
+  body .contact > div:last-of-type .contact-right-button > div, body .contact > div:last-of-type .contact-right-button:hover > div {
+    margin-left: 1vw;
+    background: #F7941E;
+    border: 1px solid #000000;
+  }
+  body .contact > div:last-of-type .contact-right-button:hover {
+    color: #FFFFFF;
+  }
+  body .contact > div:last-of-type .contact-right-button:hover > div {
+    background: #000000;
+  }
+  body .blogs {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding: 6.6vw 9.4vw 9.5vw;
+  }
+  body .blogs > p:first-of-type {
+    font-family: Gilroy;
+    font-size: 2.2vw;
+    line-height: 2.6vw;
+    text-align: center;
+    margin-top: 0;
+  }
+  body .blogs > p:last-of-type {
+    font-family: Gilroy;
+    font-size: 1.25vw;
+    line-height: 1.5vw;
+    text-decoration: none;
+    text-align: center;
+    margin-bottom: 4.4vw;
+  }
+  body .blogs .blogs-card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 25.7vw;
+  }
+  body .blogs .blogs-card > div:first-of-type {
+    width: 27.7vw;
+    background: url("bg_down.png") no-repeat center/cover;
+  }
+  body .blogs .blogs-card > div:last-of-type {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding: 4.375vw 14vw 3.4vw 5.4vw;
+    background: #000000;
+  }
+  body .blogs .blogs-card > div:last-of-type > p:first-of-type {
+    font-family: Gilroy;
+    font-size: 1vw;
+    line-height: 1.4vw;
+    text-decoration: none;
+    color: #FFFFFF;
+  }
+  body .blogs .blogs-card > div:last-of-type > p:last-of-type {
+    font-family: Gilroy;
+    font-size: 3.3vw;
+    line-height: 4vw;
+    color: #FFFFFF;
+    margin-top: 0;
+  }
+  body .blogs .blogs-card > div:last-of-type > a {
+    font-family: Gilroy;
+    font-size: 1.25vw;
+    line-height: 1.5vw;
+    text-decoration: none;
+    color: #FFFFFF;
+  }
+  body .blogs .blogs-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 2.8vw;
+    margin-left: -2vw;
+  }
+  body .blogs .blogs-container > div {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding: 3.3vw;
+    margin-left: 2vw;
+  }
+  body .blogs .blogs-container > div > p:first-of-type {
+    font-family: Gilroy;
+    font-size: 1.8vw;
+    font-weight: bold;
+    line-height: 2.3vw;
+    margin: 0;
+  }
+  body .blogs .blogs-container > div > p:last-of-type {
+    font-family: Gilroy;
+    font-size: 1.25vw;
+    line-height: 1.5vw;
+    text-decoration: none;
+  }
+  body .blogs .blogs-container > div > a {
+    font-family: Gilroy;
+    font-size: 1vw;
+    line-height: 1.4vw;
+    text-decoration: none;
+    color: #000000;
+  }
+  body footer {
+    padding: 7.3vw 15.3vw 2.4vw;
+    background: #FAFAFA;
+  }
+  body footer .footer-links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-left: -5.6vw;
+  }
+  body footer .footer-links > a {
+    font-family: Gilroy;
+    font-size: 1vw;
+    line-height: 1.4vw;
+    text-decoration: none;
+    font-weight: bold;
+    color: #000000;
+    margin-left: 5.6vw;
+  }
+  body footer .footer-links > span {
+    font-family: Homemade Apple;
+    font-size: 1.25vw;
+    line-height: 2.7vw;
+    color: #F7941E;
+    margin: 0 4.1vw 0 9.8vw;
+  }
+  body footer .line {
+    border: 1px solid #000000;
+    margin: 3.5vw 0;
+  }
+  body footer .social {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-left: -1.5vw;
+  }
+  body footer .social > a {
+    margin-left: 1.5vw;
+  }
+  body footer > p {
+    font-family: Gilroy;
+    font-size: 1vw;
+    line-height: 1.4vw;
+    text-decoration: none;
+    text-align: center;
+    margin-top: 5vw;
+  }
+  body footer > p > a {
+    text-decoration: none;
+    color: #000000;
+  }
+}
+/*# sourceMappingURL=style.css.map */
